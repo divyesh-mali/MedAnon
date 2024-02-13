@@ -1,0 +1,88 @@
+<!-- res/layout/about_section.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textColor="#0D1C12"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to our app! We are dedicated to providing exceptional experiences for our users."
+        android:textColor="#0D1C12"
+        android:textSize="16sp" />
+
+    <!-- Contact Info -->
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: contact@example.com"
+        android:textColor="#0D1C12"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/phoneTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone: +1 (123) 456-7890"
+        android:textColor="#0D1C12"
+        android:textSize="16sp" />
+
+    <!-- Social Media Links -->
+    <TextView
+        android:id="@+id/facebookTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facebook: https://www.facebook.com/example"
+        android:textColor="#17CE63"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/twitterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Twitter: https://twitter.com/example"
+        android:textColor="#17CE63"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/instagramTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instagram: https://www.instagram.com/example"
+        android:textColor="#17CE63"
+        android:textSize="16sp" />
+
+</LinearLayout>
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".InfoFragment">-->
+
+<!--    &lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:text="@string/hello_blank_fragment" />-->
+
+<!--    -->
+
+<!--</FrameLayout>-->
