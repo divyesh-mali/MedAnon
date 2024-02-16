@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/bottom_nav_home"/>
+
+    <item
+        android:id="@+id/forum"
+        android:title="Forum"
+        android:icon="@drawable/bottom_nav_forum"/>
+
+<!--    <item-->
+<!--        android:id="@+id/fab"-->
+<!--        android:title=""-->
+<!--        android:enabled="false"/>-->
+
+    <item
+        android:id="@+id/create"
+        android:title="Create"
+        android:icon="@drawable/bottom_nav_create"/>
+
+    <item
+        android:id="@+id/chat"
+        android:title="Chat"
+        android:icon="@drawable/bottom_nav_chat"/>
+
+</menu>

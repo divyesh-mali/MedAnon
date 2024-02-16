@@ -7,3 +7,26 @@
 
     <style name="Theme.MedAnon" parent="Base.Theme.MedAnon" />
 </resources>
+
+
+
+<!--<resources xmlns:tools="http://schemas.android.com/tools">-->
+<!--    &lt;!&ndash; Base application theme. &ndash;&gt;-->
+<!--    <style name="Theme.BottomNavigation" parent="Theme.MaterialComponents.DayNight.NoActionBar">-->
+<!--        &lt;!&ndash; Primary brand color. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/green</item>-->
+<!--        <item name="colorPrimaryVariant">@color/green</item>-->
+<!--        <item name="colorOnPrimary">@color/white</item>-->
+<!--        &lt;!&ndash; Secondary brand color. &ndash;&gt;-->
+<!--        <item name="colorSecondary">@color/lightgreen</item>-->
+<!--        <item name="colorSecondaryVariant">@color/lightgreen</item>-->
+<!--        <item name="colorOnSecondary">@color/black</item>-->
+<!--        &lt;!&ndash; Status bar color. &ndash;&gt;-->
+<!--        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+
+<!--        <style name="Theme.MedAnon" parent="Base.Theme.MedAnon" />-->
+<!--    </style>-->
+<!--</resources>-->
+
+

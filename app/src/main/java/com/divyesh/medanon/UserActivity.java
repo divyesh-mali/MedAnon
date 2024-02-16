@@ -6,12 +6,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -56,6 +58,7 @@ public class UserActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        // Handle navigation drawer item clicks
         int itemId = item.getItemId();
 
         if (itemId == R.id.nav_home) {
@@ -70,8 +73,6 @@ public class UserActivity extends AppCompatActivity implements NavigationView.On
             startActivity(intent);
             finish();
         }
-
-
 
 
 //        switch (item.getItemId()) {
@@ -98,6 +99,30 @@ public class UserActivity extends AppCompatActivity implements NavigationView.On
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
+    private BottomNavigationView.OnNavigationItemSelectedListener navListener =
+            item -> {
+                Fragment selectedFragment = null;
+
+                if (item.getItemId() == R.id.home) {
+                    selectedFragment = new HomeFragment();
+                } else if (item.getItemId() == R.id.forum) {
+                    selectedFragment = new ForumFragment();
+                } else if (item.getItemId() == R.id.create) {
+                    selectedFragment = new CreateFragment();
+                } else if (item.getItemId() == R.id.chat) {
+                    selectedFragment = new ChatFragment();
+                }
+
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        selectedFragment).commit();
+
+                return true;
+            };
+
+
+
 
     @Override
     public void onBackPressed() {
