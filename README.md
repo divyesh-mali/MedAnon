@@ -1,6 +1,8 @@
 # MedAnon - Medical Anonymous
 
-MedAnon is a platform designed to provide anonymous support and guidance for individuals facing mental or physical health challenges. Whether you're a student, a woman, or anyone seeking confidential assistance, MedAnon offers a safe space to share your concerns and receive expert advice without revealing your identity.
+MedAnon abbreviated as Medical Anonymous is a platform that helps people (especially students & females) to share their about their mental or physical health problems anonymously, directly with the Doctors or Psychiatrists and get proper guidance regarding their problem. This platform is specifically for those people (whether young or old), who want to know more about whether the issue they are facing is serious and does it need proper treatment or it can be treated with normal rest and medicines. Even though profiles are kept anonymous, they are 100% verified in MedAnon.
+
+MedAnon helps you anonymously consult doctors or psychiatrists for your physical or mental health problems. You can also post your issues in the discussion forums and where you can discuss your issues with peers who are facing same issues just like you and get to know about their experience and the professionals will be there to guide you as well. You can consult a doctor online without revealing your identity. Your identity is not revealed until you further choose to consult treatment from the doctor or psychiatrist.
 
 ## Features
 
