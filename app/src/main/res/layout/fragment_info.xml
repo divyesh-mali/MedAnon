@@ -3,7 +3,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/white">
 
     <!-- Title -->
     <TextView
@@ -20,7 +21,7 @@
         android:id="@+id/descriptionTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to our app! We are dedicated to providing exceptional experiences for our users."
+        android:text="MedAnon helps you anonymously consult doctors or psychiatrists for your physical or mental health problems. You can also post your issues in the discussion forums and where you can discuss your issues with peers who are facing same issues just like you and get to know about their experience and the professionals will be there to guide you as well. You can consult a doctor online without revealing your identity. Your identity is not revealed until you further choose to consult treatment from the doctor or psychiatrist.  "
         android:textColor="#0D1C12"
         android:textSize="16sp" />
 
@@ -29,7 +30,7 @@
         android:id="@+id/emailTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email: contact@example.com"
+        android:text="Email: divyeshmali8055@gmail.com"
         android:textColor="#0D1C12"
         android:textSize="16sp" />
 
@@ -37,34 +38,34 @@
         android:id="@+id/phoneTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Phone: +1 (123) 456-7890"
+        android:text="Phone: +91 8140944340"
         android:textColor="#0D1C12"
         android:textSize="16sp" />
 
     <!-- Social Media Links -->
-    <TextView
-        android:id="@+id/facebookTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Facebook: https://www.facebook.com/example"
-        android:textColor="#17CE63"
-        android:textSize="16sp" />
+<!--    <TextView-->
+<!--        android:id="@+id/facebookTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="LinkedIn : https://www.linkedin.com/in/divyeshmali/"-->
+<!--        android:textColor="#17CE63"-->
+<!--        android:textSize="16sp" />-->
 
-    <TextView
-        android:id="@+id/twitterTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Twitter: https://twitter.com/example"
-        android:textColor="#17CE63"
-        android:textSize="16sp" />
+<!--    <TextView-->
+<!--        android:id="@+id/twitterTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Twitter: https://twitter.com/example"-->
+<!--        android:textColor="#17CE63"-->
+<!--        android:textSize="16sp" />-->
 
-    <TextView
-        android:id="@+id/instagramTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Instagram: https://www.instagram.com/example"
-        android:textColor="#17CE63"
-        android:textSize="16sp" />
+<!--    <TextView-->
+<!--        android:id="@+id/instagramTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Instagram: https://www.instagram.com/example"-->
+<!--        android:textColor="#17CE63"-->
+<!--        android:textSize="16sp" /> -->
 
 </LinearLayout>
 
