@@ -16,6 +16,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.divyesh.medanon.databinding.ActivityMainBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
@@ -82,7 +83,7 @@ public class UserActivity extends AppCompatActivity implements NavigationView.On
         } else if(itemId == R.id.nav_feedback) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new FeedbackFragment()).commit();
         }
-          else if (itemId == R.id.nav_logout) {
+        else if (itemId == R.id.nav_logout) {
             firebaseAuth.signOut();
             Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
             startActivity(intent);
@@ -139,6 +140,11 @@ public class UserActivity extends AppCompatActivity implements NavigationView.On
         // Add more sample psychiatrists as needed
         return psychiatrists;
     }
+
+
+    //ActivityMainBinding binding; //     <<<<<-------------------------------------------
+
+
 
 
     // Method to populate the doctor list
