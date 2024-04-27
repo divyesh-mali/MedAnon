@@ -83,9 +83,23 @@
                 android:id="@+id/psychiatristsContainer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal" />
+                android:orientation="horizontal">
 
+                <!-- Psychiatrist Card 1 -->
+                <include layout="@layout/item_psychiatrist_card" />
+
+                <!-- Psychiatrist Card 2 -->
+                <include layout="@layout/item_psychiatrist_card" />
+
+                <include layout="@layout/item_psychiatrist_card" />
+
+                <include layout="@layout/item_psychiatrist_card" />
+
+                <!-- Add more psychiatrist cards as needed -->
+
+            </LinearLayout>
         </HorizontalScrollView>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

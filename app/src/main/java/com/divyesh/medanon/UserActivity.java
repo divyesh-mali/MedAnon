@@ -83,6 +83,18 @@ public class UserActivity extends AppCompatActivity implements NavigationView.On
         } else if(itemId == R.id.nav_feedback) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new FeedbackFragment()).commit();
         }
+        else if(itemId == R.id.nav_chat) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ChatFragment()).commit();
+        }
+
+        else if(itemId == R.id.nav_forum) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ForumFragment()).commit();
+        }
+
+        else if(itemId == R.id.nav_create) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new CreateFragment()).commit();
+        }
+
         else if (itemId == R.id.nav_logout) {
             firebaseAuth.signOut();
             Intent intent = new Intent(getApplicationContext(), LoginActivity.class);

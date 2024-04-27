@@ -2,11 +2,15 @@ package com.divyesh.medanon;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -55,10 +59,58 @@ public class ChatFragment extends Fragment {
         }
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_chat, container, false);
+//    @Override
+//    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+//                             Bundle savedInstanceState) {
+//        // Inflate the layout for this fragment
+//        return inflater.inflate(R.layout.fragment_chat, container, false);
+//    }
+
+
+
+
+    ////////////////////////    Below Code pasted from chatGPT     ////////////////////////////
+
+    private EditText editTextTitle;
+    private EditText editTextDescription;
+    private Button buttonSelectMedia;
+    private Button buttonPost;
+
+    public View onCreateView(@NonNull LayoutInflater inflater,
+                             ViewGroup container, Bundle savedInstanceState) {
+        View root = inflater.inflate(R.layout.fragment_create, container, false);
+
+        // Initialize views
+        editTextTitle = root.findViewById(R.id.editTextTitle);
+        editTextDescription = root.findViewById(R.id.editTextDescription);
+        buttonSelectMedia = root.findViewById(R.id.buttonSelectMedia);
+        buttonPost = root.findViewById(R.id.buttonPost);
+
+        // Handle button click events
+        buttonPost.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Validate input fields (optional)
+                String title = editTextTitle.getText().toString().trim();
+                String description = editTextDescription.getText().toString().trim();
+
+                if (title.isEmpty() || description.isEmpty()) {
+                    Toast.makeText(getContext(), "Please fill in all fields", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                // Post the message (for now, just display a toast message)
+                Toast.makeText(getContext(), "Message posted", Toast.LENGTH_SHORT).show();
+
+                // Reset input fields
+                editTextTitle.setText("");
+                editTextDescription.setText("");
+            }
+        });
+
+        // Handle buttonSelectMedia click event (if needed)
+        // buttonSelectMedia.setOnClickListener(...);
+
+        return root;
     }
 }

@@ -9,20 +9,18 @@
         android:id="@+id/doctor_image"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:src="@drawable/doctor3"
-    android:scaleType="centerCrop"
-    android:layout_gravity="center_horizontal"
-    android:contentDescription="Hello everyone. This is just a description"
-        android:background="@drawable/rounded_corner"
-        />
-<!--        android:contentDescription="@string/doctor_image"    -->
+        android:src="@drawable/psychiatrist3"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="Hello everyone. This is just a description"/>
+    <!--        android:contentDescription="@string/doctor_image"    -->
 
 
     <TextView
-        android:id="@+id/doctor_name"
+        android:id="@+id/psychiatrist_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dr. Vikram Sharma"
+        android:text="Dr. Ananya Patel"
         android:textSize="16sp"
         android:textColor="#0D1C12" />
 
@@ -30,7 +28,7 @@
         android:id="@+id/doctor_expertise"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Specialization: Ayurved"
+        android:text="Specialization: Psychiatry"
         android:textSize="14sp"
         android:textColor="#0D1C12" />
 
@@ -38,7 +36,7 @@
         android:id="@+id/doctor_experience"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Experience: 12 years"
+        android:text="Experience: 7 years"
         android:textSize="14sp"
         android:textColor="#0D1C12" />
 
